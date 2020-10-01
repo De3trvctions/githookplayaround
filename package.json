@@ -1,0 +1,27 @@
+{
+  "name": "githookplayaround",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/De3trvctions/githookplayaround.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/De3trvctions/githookplayaround/issues"
+  },
+  "homepage": "https://github.com/De3trvctions/githookplayaround#readme",
+  "devDependencies": {
+    "husky": "^4.3.0"
+  },
+  "husky": {
+    "hooks": {
+      "post-merge": "./.githooks/pre-commit"
+    }
+  }
+}
